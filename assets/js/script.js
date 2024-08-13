@@ -18,3 +18,24 @@ const toggleNavbar = () => {
 };
 
 addEventOnElement(navToggler, "click", toggleNavbar);
+
+// filter function
+const filterBtn = document.querySelectorAll("[data-filter-btn]");
+const filterItems = document.querySelectorAll("[data-filter]");
+let lastClickBtn = filterBtn[0];
+
+const filter = function () {
+  lastClickBtn.classList.remove("active");
+  this.classList.add("active");
+  lastClickBtn = this;
+
+  for (let i = 0; i < filterItems.length; i++) {
+    if (filterItems[i].dataset.filter === this.dataset.filterBtn) {
+      filterItems[i].style.display = "block";
+    } else {
+      filterItems[i].style.display = "none";
+    }
+  }
+};
+
+addEventOnElement(filterBtn, "click", filter);
