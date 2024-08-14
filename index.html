@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top">
     <!-- Header Section Start -->
     <header class="header" id="header">
       <div class="header-top">
@@ -767,24 +767,33 @@
 
           <ul class="filter-list">
             <li>
-              <button class="filter-btn" data-filter-btn="featured">
+              <button class="filter-btn" data-filter-btn="all" data-all="all">
+                All Products
+              </button>
+            </li>
+            <li>
+              <button
+                class="filter-btn"
+                data-filter-btn="featured"
+                data-all="all"
+              >
                 Featured Products
               </button>
             </li>
             <li>
-              <button class="filter-btn" data-filter-btn="new">
+              <button class="filter-btn" data-filter-btn="new" data-all="all">
                 New Products
               </button>
             </li>
             <li>
-              <button class="filter-btn" data-filter-btn="sell">
+              <button class="filter-btn" data-filter-btn="sell" data-all="all">
                 Upsell Products
               </button>
             </li>
           </ul>
 
           <ul class="product-list scrollbar">
-            <li class="scrollbar-item" data-filter="sell">
+            <li class="scrollbar-item" data-filter="sell" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -842,7 +851,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="new">
+            <li class="scrollbar-item" data-filter="new" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -900,7 +909,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="sell">
+            <li class="scrollbar-item" data-filter="sell" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -958,7 +967,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="featured">
+            <li class="scrollbar-item" data-filter="featured" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -1016,7 +1025,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="new">
+            <li class="scrollbar-item" data-filter="new" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -1074,7 +1083,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="sell">
+            <li class="scrollbar-item" data-filter="sell" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -1132,7 +1141,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="featured">
+            <li class="scrollbar-item" data-filter="featured" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -1190,7 +1199,7 @@
               </div>
             </li>
 
-            <li class="scrollbar-item" data-filter="new">
+            <li class="scrollbar-item" data-filter="new" data-all="all">
               <div class="product-card">
                 <div
                   class="card-banner img-holder"
@@ -1251,7 +1260,236 @@
         </div>
       </section>
       <!-- Popular Section End -->
+
+      <!-- Blog Section Start -->
+      <section class="section blog">
+        <div class="container">
+          <h2 class="h2 section-title">Latest Blog</h2>
+          <p class="section-text">
+            Contrary to popular belief, Lorem Ipsum is not simply random.
+          </p>
+
+          <ul class="scrollbar-blog">
+            <li class="scrollbar-item-blog">
+              <div class="blog-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 600; --height: 400"
+                >
+                  <img
+                    src="./assets/images/blog-1.jpg"
+                    alt="blog-1"
+                    width="600"
+                    height="400"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Significant reading has info</a
+                    >
+                  </h3>
+
+                  <ul class="card-meta-list">
+                    <li class="meta-item">
+                      <time class="meta-link">04 March, 2022</time>
+                    </li>
+                    <li class="meta-item">
+                      <a href="#" class="meta-link">1 comment</a>
+                    </li>
+                  </ul>
+
+                  <p class="card-text">
+                    The summer holidays are wonderful. Dressing for them can be
+                    significantly less so: Packing light...
+                  </p>
+
+                  <a href="#" class="btn card-btn">Read More...</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item-blog">
+              <div class="blog-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 600; --height: 400"
+                >
+                  <img
+                    src="./assets/images/blog-2.jpg"
+                    alt="blog-2"
+                    width="600"
+                    height="400"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Significant reading has info</a
+                    >
+                  </h3>
+
+                  <ul class="card-meta-list">
+                    <li class="meta-item">
+                      <time class="meta-link">04 March, 2022</time>
+                    </li>
+                    <li class="meta-item">
+                      <a href="#" class="meta-link">1 comment</a>
+                    </li>
+                  </ul>
+
+                  <p class="card-text">
+                    The summer holidays are wonderful. Dressing for them can be
+                    significantly less so: Packing light...
+                  </p>
+
+                  <a href="#" class="btn card-btn">Read More...</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="scrollbar-item-blog">
+              <div class="blog-card">
+                <figure
+                  class="card-banner img-holder"
+                  style="--width: 600; --height: 400"
+                >
+                  <img
+                    src="./assets/images/blog-3.jpg"
+                    alt="blog-3"
+                    width="600"
+                    height="400"
+                    class="img-cover"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Significant reading has info</a
+                    >
+                  </h3>
+
+                  <ul class="card-meta-list">
+                    <li class="meta-item">
+                      <time class="meta-link">04 March, 2022</time>
+                    </li>
+                    <li class="meta-item">
+                      <a href="#" class="meta-link">1 comment</a>
+                    </li>
+                  </ul>
+
+                  <p class="card-text">
+                    The summer holidays are wonderful. Dressing for them can be
+                    significantly less so: Packing light...
+                  </p>
+
+                  <a href="#" class="btn card-btn">Read More...</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Blog Section End -->
     </main>
+
+    <!-- Footer Section Start -->
+    <footer
+      class="footer section"
+      style="background-image: url(./assets/images/section-bg.jpg)"
+    >
+      <div class="footer-top">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                alt="logo"
+                width="138"
+                height="28"
+              />
+            </a>
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do
+              eiusmod tempor inci ut labore et dolore consectetur adipisicing
+              elit sed do eiusmod tempor.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link"
+                  ><ion-icon name="logo-facebook"></ion-icon>facebook</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="social-link"
+                  ><ion-icon name="logo-instagram"></ion-icon>instagram</a
+                >
+              </li>
+
+              <li>
+                <a href="#" class="social-link"
+                  ><ion-icon name="logo-youtube"></ion-icon>youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Corporate</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Shop</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy;Copyright 2024 | Made With ❤️ by HilalKA.
+          </p>
+
+          <img
+            src="./assets/images/payment-mehtod.png"
+            class="w-100"
+            width="311"
+            height="30"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to Top -->
+    <a href="#top" class="back-top-btn">
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
     <!-- My JavaScript -->
     <script src="assets/js/script.js"></script>
